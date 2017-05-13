@@ -26,8 +26,8 @@ module ActiveMerchant #:nodoc:
     class AuthorizeNetArbGateway < Gateway
       API_VERSION = '3.1'
 
-      self.test_url = 'https://apitest.authorize.net/xml/v1/request.api'
-      self.live_url = 'https://api.authorize.net/xml/v1/request.api'
+      self.test_url = 'https://secure.authorize.net/gateway/transact.dll'
+      self.live_url = 'https://secure.authorize.net/gateway/transact.dll'
 
       self.default_currency = 'USD'
 

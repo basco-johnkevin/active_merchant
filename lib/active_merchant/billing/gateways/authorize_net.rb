@@ -5,8 +5,8 @@ module ActiveMerchant
     class AuthorizeNetGateway < Gateway
       include Empty
 
-      self.test_url = 'https://apitest.authorize.net/xml/v1/request.api'
-      self.live_url = 'https://api2.authorize.net/xml/v1/request.api'
+      self.test_url = 'https://secure.authorize.net/gateway/transact.dll'
+      self.live_url = 'https://secure.authorize.net/gateway/transact.dll'
 
       self.supported_countries = %w(AD AT AU BE BG CA CH CY CZ DE DK EE ES FI FR GB GI GR HU IE IL IS IT LI LT LU LV MC MT NL NO PL PT RO SE SI SK SM TR US VA)
       self.default_currency = 'USD'

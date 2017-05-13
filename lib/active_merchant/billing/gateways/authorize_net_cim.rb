@@ -27,8 +27,8 @@ module ActiveMerchant #:nodoc:
     # 4. Type in the answer to the secret question configured on setup
     # 5. Click Submit
     class AuthorizeNetCimGateway < Gateway
-      self.test_url = 'https://apitest.authorize.net/xml/v1/request.api'
-      self.live_url = 'https://api2.authorize.net/xml/v1/request.api'
+      self.test_url = 'https://secure.authorize.net/gateway/transact.dll'
+      self.live_url = 'https://secure.authorize.net/gateway/transact.dll'
 
       AUTHORIZE_NET_CIM_NAMESPACE = 'AnetApi/xml/v1/schema/AnetApiSchema.xsd'
 
